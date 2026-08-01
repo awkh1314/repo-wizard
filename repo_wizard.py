@@ -678,6 +678,7 @@ def build_parser() -> argparse.ArgumentParser:
         prog="repo-wizard",
         description="把任意目录一键变成开源就绪的 GitHub 仓库。",
     )
+    p.add_argument("--version", action="version", version="repo-wizard 0.1.1")
     sub = p.add_subparsers(dest="command", required=True)
 
     pi = sub.add_parser("init", help="生成开源所需的一整套文件")
