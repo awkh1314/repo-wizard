@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repo-wizard"
+version = "0.1.0"
+description = "Turn any directory into an open-source-ready GitHub repo in seconds."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["cli", "open-source", "github", "scaffold", "license", "readme"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/awkh1314/repo-wizard"
+Repository = "https://github.com/awkh1314/repo-wizard"
+
+[project.scripts]
+repo-wizard = "repo_wizard:main"
+
+[tool.setuptools]
+py-modules = ["repo_wizard"]
